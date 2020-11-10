@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+
+}
+
+.container {
+    padding: 2rem;
+    display: grid;
+    grid-template-areas:
+        "photo1 heading heading photo2"
+        "..... photo3 photo4 ..........";
+    grid-gap: 1rem;
+
+}
+
+
+
+h1 {
+    grid-area: heading;
+}
+
+.photo1 {
+    grid-area: photo1;
+    transform: rotate(-10deg);
+}
+
+.photo2 {
+    grid-area: photo2;
+    transform: rotate(3deg);
+}
+
+.photo3 {
+    grid-area: photo3;
+    transform: rotate(-6deg);
+}
+
+.photo4 {
+    grid-area: photo4;
+    transform: rotate(11deg);
+    margin-right: -6rem;
+}
